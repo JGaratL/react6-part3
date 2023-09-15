@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import Grid from './components/Grid';
+import StyledButton from './components/StyledButton ';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid>
+      <StyledButton variant="default">Default</StyledButton>
+      <StyledButton variant="success">Success</StyledButton>
+      <StyledButton variant="error">Error</StyledButton>
+      <StyledButton variant="warning">Warning</StyledButton>
+      <StyledButton variant="info">Info</StyledButton>
+    </Grid>
   );
 }
 
